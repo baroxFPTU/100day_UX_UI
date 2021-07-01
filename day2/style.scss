@@ -72,9 +72,8 @@ body {
 }
 
 header {
-  display: flex;
-  justify-content: space-between;
-  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
   padding: 40px 50px;
   border-bottom: 1px solid var(--stroke-color);
 
@@ -82,6 +81,7 @@ header {
   .logo {
     display: flex;
     align-items: center;
+    flex-grow: 1;
     img {
       margin-right: 5px;
     }
@@ -92,6 +92,8 @@ header {
   .nav {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex-grow: 2;
     .nav-link {
       padding: 10px 15px;
       opacity: 0.7;
@@ -103,6 +105,9 @@ header {
     }
   }
   .btn-group {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
     .btn {
       display: inline-block;
       padding: 15px 30px;
@@ -196,6 +201,72 @@ main {
         color: #000;
         font-size: 16px;
         font-weight: 400;
+      }
+    }
+  }
+}
+
+.section-posts {
+  display: flex;
+  flex-direction: column;
+
+  background-color: #fff;
+  .header-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .filter-posts {
+      justify-self: start;
+      border: 1px solid var(--stroke-color);
+      padding: 5px;
+      border-radius: 40px;
+
+      background-color: var(--gray-light);
+
+      .btn {
+        padding: 15px 30px;
+        opacity: 0.5;
+        border-radius: 30px;
+        display: inline-block;
+
+        &.active {
+          opacity: 1;
+          box-shadow: 0px 10px 15px -10px rgba(2, 5, 132, 0.05);
+          border: 1px solid var(--stroke-color);
+
+          background-color: #fff;
+        }
+      }
+    }
+    .tabs {
+      justify-self: center;
+      display: flex;
+      align-items: center;
+      .tab {
+        padding: 10px 15px;
+        border-radius: 30px;
+        &.active {
+          background-color: var(--gray-light);
+          border: 1px solid var(--stroke-color);
+        }
+      }
+    }
+    .category {
+      display: flex;
+      align-items: center;
+      justify-self: end;
+      .item {
+        padding: 16px;
+        border-radius: 50%;
+        background-color: var(--gray-light);
+        border: 1px solid var(--stroke-color);
+        &:hover,
+        &.active {
+          border: 1px solid #ff6a95;
+        }
+      }
+      .item:not(first-child) {
+        margin-left: 15px;
       }
     }
   }
