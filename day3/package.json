@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "node-sass --watch resources/scss/ --output public/css/"
+    "watch": "sass --watch resources/scss/style.scss public/css/style.css --style compressed"
   },
   "author": "barox",
   "license": "MIT",
   "devDependencies": {
-    "node-sass": "^6.0.1"
+    "sass": "^1.35.1"
   }
 }

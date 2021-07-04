@@ -49,6 +49,85 @@
                 </div>
             </div>
         </header>
+        <main class="main">
+            <header class="main__header">
+                <h3 class="main__header-heading">Invoices</h3>
+                <a href="javascript:void(0)" class="btn btn-primary">
+                    <span class="plus"></span>
+                    Add New
+                </a>
+            </header>
+            <section class="sort">
+                <button class="btn sort__date arrow-down">
+                    <span class="icon">
+                        <img src="./img/sort.svg" alt="sort icon">
+                    </span>
+                    Sort by Date
+                </button>
+                <button class="btn btn-primary sort__date-any arrow-down">
+                    <span class="icon">
+                        <img src="./img/calendar.svg" alt="sort icon">
+                    </span>
+                    Any Date
+                </button>
+                <div class="search">
+                    <span class="icon"><img src="./img/search.svg" alt=""></span>
+                    <input type="text" placeholder="Search">
+                </div>
+                <div class="btn-group">
+
+                    <button class="btn sort__grid">
+                        <span>
+                            <img src="./img/app.svg" alt="">
+                        </span>
+                    </button>
+                    <button class="btn btn-primary sort__column">
+                        <span>
+                            <img src="./img/navbar.svg" alt="">
+                        </span>
+                    </button>
+                </div>
+            </section>
+            <section class="dashboard">
+                <div class="tabs">
+                    <div class="tab active">
+                        <a href="javascript:void(0)" class="tab__link">
+                            Invoices
+                        </a>
+                    </div>
+                    <div class="tab">
+                        <a href="javascript:void(0)" class="tab__link">
+                            Draft
+                        </a>
+                    </div>
+                    <div class="tab">
+                        <a href="javascript:void(0)" class="tab__link">
+                            Recurring Invoices
+                        </a>
+                    </div>
+                  <div class="line"></div>
+                </div>
+                <div class="labels">
+                    <div class="label">
+                        <span class="label__name">All <span class="label__amount">76</span></span>
+                        <span class="label__value">$189,774</span>
+                    </div>
+                    <div class="label">
+                        <span class="label__name">Unpaid <span class="label__amount">6</span></span>
+                        <span class="label__value">$5400</span>
+                    </div>
+                    <div class="label">
+                        <span class="label__name">Paid <span class="label__amount">68</span></span>
+                        <span class="label__value">$183,774</span>
+                    </div>
+                    <div class="label">
+                        <span class="label__name">Cancelled <span class="label__amount">2</span></span>
+                        <span class="label__value">$600</span>
+                    </div>
+                 
+                </div>
+            </section>
+        </main>
     </div>
 
     <script defer src="./js/app.js"></script>
