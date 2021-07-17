@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <div class="container">
+            <h3 class="heading">Login</h3>
+            <a href="#" class="create-account">Create an account</a>
+        <form>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <button class="btn btn-primary btn-login" type="submit">Log in</button>
+            <div class="keep">
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox" checked>
+                    <span class="checkmark"></span>
+                </div>
+                <span>Keep me logged in</span>
+            </div>
+        </form>
+        <footer>
+            <a href="#" class="forgot">Forgot password?</a>
+            <span>&copy;2001-2020 All Right Reserved</span>
+        </footer>
+
+        <div class="verification">
+            <h3 class="heading">Login Verification</h3>
+            <p>To continue login in we need you to complete one of the following</p>
+            <label class="radio-container">Verification code via email
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+              </label>
+              <label class="radio-container">Verification code via SMS
+                  <span class="desc-radio">We'll send a code to your mobile phone that can enter to verify your identity</span>
+                <input type="radio" checked="checked" name="radio">
+                <span class="checkmark"></span>
+              </label>
+              
+            <a href="#" class="btn btn-send">Send SMS Code</a>
+            <div class="keep">
+                <div class="checkbox">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <span class="checkmark"></span>
+                </div>
+              <div class="content">
+                <span>Remeber this device</span>
+                <span class="description">Don't select this option if you're using a public computer</span>
+              </div>
+            </div>
+            <a href="#" class="return-login">Return to login</a>
+        </div>
+    </div>
+    <script>
+        const btnLogin = document.querySelector('.btn-login');
+        const verificationPopup = document.querySelector('.verification');
+        const returnLogin = document.querySelector('.return-login');
+
+        btnLogin.addEventListener('click', ()=> {
+            verificationPopup.classList.add('active');
+        })
+
+        returnLogin.addEventListener('click', ()=> {
+            verificationPopup.classList.remove('active');
+        })
+    </script>
+</body>
+</html>
