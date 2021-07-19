@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 5 - Form Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&family=Rokkitt:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="col-left">
+            <div class="main-login">
+                <h3>Log In To My Heart</h3>
+                <p>Log in to be a big portion of my <span>heart</span></span></p>
+                <form class="form-login">
+                    <input type="text" placeholder="Enter your email address" required>
+                    <div class="btn-group">
+                        <a href="#" class="forgot">Forgot password?</a>
+                        <a href="#" class="btn btn-primary btn-login">Next <ion-icon name="arrow-forward-outline"></ion-icon></a>
+                    </div>
+                </form>
+            </div>
+
+            <section class="social-login">
+                <span class="desc-option">Or log in with</span>
+                <div class="btn-group">
+                    <a href="#" class="btn">
+                        <img src="./assets/img/facebook-icon.png" class="icon facebook-icon" alt="facebook icon">
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="btn">
+                        <img src="./assets/img/google-icon.png" class="icon google-icon"  alt="google icon">
+                        <span>Google</span>
+                    </a>
+                </div>
+                <span class="desc-signup">Don't have an account yet? <a href="#" class="signup">Sign up</a></span>
+            </section>
+        </div>
+        <div class="col-right">
+            <span class="btn-close"><ion-icon name="add-outline"></ion-icon></span>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="./script/app.js"></script>
+</body>
+</html>
