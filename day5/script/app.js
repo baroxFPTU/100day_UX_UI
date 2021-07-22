@@ -1,7 +1,7 @@
 const btnLogin = document.querySelector('.btn-login');
 const input = document.querySelector('input[type="text"]');
 
-btnLogin.addEventListener('click',() => {
+btnLogin.addEventListener('click', () => {
     if (input.value == 'lenguyentieunguyen@gmail.com') {
         alert('Đăng nhập thành công!');
         alert('Loading...');
@@ -12,5 +12,5 @@ btnLogin.addEventListener('click',() => {
         return;
     }
     alert('Đã bảo là phải dùng mail lenguyentieunguyen@gmail.com rồi :)')
-    
+
 })
